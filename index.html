@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>My Video Editor</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Edit</title>
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#000000">
+<link rel="apple-touch-icon" href="icon.png">
+
+<style>
+body {
+  background: black;
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+</style>
+
 </head>
 <body>
 
-<h1>My Video Editor</h1>
+<h1>Video Edit</h1>
 
 <input type="file" id="upload" accept="video/*">
 <br><br>
-<video id="video" width="400" controls></video>
+<video id="video" width="300" controls></video>
 
 <script>
 const upload = document.getElementById("upload");
